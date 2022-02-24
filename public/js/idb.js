@@ -1,8 +1,6 @@
-const { response } = require("express");
-
 let db;
 
-const request = indexDB.open('budget_tracker', 1);
+const request = indexedDB.open('budget', 1);
 
 request.onupgradeneeded = function(e) {
     const db = e.target.result;
@@ -40,7 +38,7 @@ function uploadTransaction() {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
-                    Accept: 'application/json, text/plain*/*',
+                    Accept: 'application/json, text/plain, */*',
                     'Content-Type': 'application/json'
                 }
             })
@@ -54,8 +52,13 @@ function uploadTransaction() {
 
                     budgetObjectStore.clear();
 
-                    
+                    alert('Transaction Successful!')
                 })
+                .catch(err => {
+                    console.log(err);
+                });
         }
     }
-}
+};
+
+window.addEventListener('online', uploadTransaction);
