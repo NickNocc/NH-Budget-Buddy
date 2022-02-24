@@ -52,7 +52,7 @@ function uploadTransaction() {
 
                     budgetObjectStore.clear();
 
-                    alert('Transaction Successful!')
+                    alert('Transaction Successful!');
                 })
                 .catch(err => {
                     console.log(err);
