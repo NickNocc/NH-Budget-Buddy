@@ -1,5 +1,6 @@
 # Budget Buddy
-![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/NickNocc/NH-Budget-Buddy?style=flat&logo=appveyor)
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/NickNocc/NH-Budget-Buddy?style=flat&logo=appveyor) </br>
+https://nh-budget-tracker.herokuapp.com/
 ## Description
   
 Budget Buddy is an app designed to help you keep track of your budget on a day to day basis. We use a mongo database to ensure that your transactions are persistent and consistent. Budget Buddy is also a progressive web app, meaning that you can download it to your desktop or mobile device and input transactions even without an internet connection.
@@ -12,6 +13,7 @@ To install Budget Buddy on your desktop machine simply navigate to the address b
 ## Questions
 
  </br>
-  
+
 GitHub: https://github.com/NickNocc </br>
-Email: haretakis4@gmail.com
+Email: haretakis4@gmail.com </br>
+Screenshot: ![image](https://user-images.githubusercontent.com/89278623/155774610-c8764ebb-7934-4e70-94cf-24ab31def916.png)
